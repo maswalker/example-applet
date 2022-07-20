@@ -13,7 +13,7 @@
     "deploy-local": "w3bstream deploy example --ipfs http://127.0.0.1:5001 --node http://127.0.0.1:8020"
   },
   "devDependencies": {
-    "w3bstream-cli": "^0.0.6",
+    "w3bstream-cli": "^0.0.7",
     "@graphprotocol/graph-ts": "^0.27.0"
   },
   "dependencies": {
