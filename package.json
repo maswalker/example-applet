@@ -1,0 +1,26 @@
+{
+  "name": "example",
+  "version": "0.1.0",
+  "repository": "https://github.com/maswalker/example-applet",
+  "license": "MIT",
+  "scripts": {
+    "build-contract": "solc contracts/Gravity.sol --abi -o abis --overwrite && solc contracts/Gravity.sol --bin -o bin --overwrite",
+    "create": "w3bstream create example --node https://api.xxx.com/deploy/",
+    "create-local": "w3bstream create example --node http://127.0.0.1:8020",
+    "codegen": "w3bstream codegen",
+    "build": "w3bstream build",
+    "deploy": "w3bstream deploy example --ipfs https://api.xxx.com/ipfs/ --node https://api.xxx.com/deploy/",
+    "deploy-local": "w3bstream deploy example --ipfs http://127.0.0.1:5001 --node http://127.0.0.1:8020"
+  },
+  "devDependencies": {
+    "w3bstream-cli": "^0.0.1",
+    "@graphprotocol/graph-ts": "^0.27.0"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "babel-register": "^6.26.0",
+    "truffle": "^5.0.4",
+    "truffle-contract": "^4.0.5",
+    "truffle-hdwallet-provider": "^1.0.4"
+  }
+}
